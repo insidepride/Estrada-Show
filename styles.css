@@ -87,7 +87,7 @@ img {
 
 .logo span {
   flex: 0 0 auto;
-  margin-left: -34px;
+  margin-left: -86px;
   padding-top: 4px;
   color: var(--orange);
   font-size: clamp(18px, 1.55vw, 28px);
@@ -601,7 +601,7 @@ h2 {
   }
 
   .logo span {
-    margin-left: -22px;
+    margin-left: -54px;
     font-size: 18px;
   }
 
