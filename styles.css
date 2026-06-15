@@ -85,7 +85,24 @@ img {
     drop-shadow(0 0 32px rgba(255, 46, 196, 0.45));
 }
 
-.logo span,
+.logo span {
+  flex: 0 0 auto;
+  margin-left: -10px;
+  padding-top: 4px;
+  color: var(--orange);
+  font-size: clamp(18px, 1.55vw, 28px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  background: linear-gradient(105deg, var(--pink), var(--orange) 58%, var(--lime));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(0 0 10px rgba(248, 72, 138, 0.7))
+    drop-shadow(0 0 20px rgba(255, 139, 52, 0.24));
+}
+
 .tag {
   flex: 0 0 auto;
   padding: 6px 10px;
@@ -702,7 +719,8 @@ h2 {
   }
 
   .logo span {
-    font-size: 10px;
+    margin-left: -6px;
+    font-size: 18px;
   }
 
   .hero {
