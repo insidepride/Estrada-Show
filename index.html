@@ -1,796 +1,236 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estrada Show вЂ” РєР°РІРµСЂ-С€РѕСѓ РґР»СЏ СЃРѕР±С‹С‚РёР№</title>
-  <meta name="description" content="Estrada Show вЂ” Р¶РёРІРѕРµ РєР°РІРµСЂ-С€РѕСѓ РёР· РђСЂС…Р°РЅРіРµР»СЊСЃРєР° РґР»СЏ СЃРІР°РґРµР±, РєРѕСЂРїРѕСЂР°С‚РёРІРѕРІ Рё С‡Р°СЃС‚РЅС‹С… СЃРѕР±С‹С‚РёР№.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <a class="logo" href="#top" aria-label="Estrada Show">
-      <img src="assets/logo-clean.png" alt="Estrada">
-      <span>show</span>
-    </a>
-    <nav class="nav" aria-label="РќР°РІРёРіР°С†РёСЏ">
-      <a href="#why">Р¤РѕСЂРјР°С‚</a>
-      <a href="#photos">Р¤РѕС‚Рѕ</a>
-      <a href="#booking">Р‘СЂРѕРЅСЊ</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrada Show - кавер-группа на ваше торжество</title>
+    <meta
+      name="description"
+      content="Прототип сайта кавер-группы Estrada Show: концерты под ключ, праздники, свадьбы, корпоративы и частные мероприятия в Архангельске."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sparkle-layer" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Estrada Show">
+        <img src="assets/logo-pink.png" alt="Estrada Show" />
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#shows">Форматы</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="#booking">Забронировать дату</a>
+    </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="sparkles" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">РђСЂС…Р°РЅРіРµР»СЊСЃРє / СЃРІР°РґСЊР±С‹ / РєРѕСЂРїРѕСЂР°С‚РёРІС‹ / С‡Р°СЃС‚РЅС‹Рµ СЃРѕР±С‹С‚РёСЏ</p>
-        <h1>РљР°РІРµСЂ-С€РѕСѓ, РєРѕС‚РѕСЂРѕРµ РІС‹РіР»СЏРґРёС‚ Рё Р·РІСѓС‡РёС‚ РґРѕСЂРѕРіРѕ.</h1>
-        <p class="lead">Estrada Show РїСЂРµРІСЂР°С‰Р°РµС‚ РїСЂРёРІС‹С‡РЅС‹Рµ С…РёС‚С‹ РІ Р¶РёРІРѕР№ РєРѕРЅС†РµСЂС‚: РїР»РѕС‚РЅС‹Р№ Р·РІСѓРє, СЏСЂРєРёР№ РІРѕРєР°Р», СЃС†РµРЅР°, РґСЂР°Р№РІ Рё С‚Р°РЅС†РїРѕР» Р±РµР· СЃР»СѓС‡Р°Р№РЅС‹С… РїР°СѓР·.</p>
-        <div class="cta-row">
-          <a class="btn btn-main" href="#booking">РџСЂРѕРІРµСЂРёС‚СЊ РґР°С‚Сѓ</a>
-          <a class="btn btn-dark" href="https://vk.ru/estrada_band" target="_blank" rel="noreferrer">Р’РёРґРµРѕ РІРѕ VK</a>
+    <main id="top">
+      <section class="hero">
+        <img class="hero-bg" src="assets/hero.jpg" alt="Estrada Show на живом концерте" />
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-glitter" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Архангельск / cover band / live show</p>
+          <h1>Кавер-группа Estrada для праздника, который нельзя смотреть спокойно</h1>
+          <p class="hero-lead">
+            Концерт под ключ, свадьба, корпоратив или мощное дополнение к вашей программе.
+            Старые любимые песни в наших руках находят новую энергию.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Рассчитать стоимость</a>
+            <a class="btn btn-secondary" href="https://vk.ru/estrada_band" target="_blank" rel="noreferrer">Группа VK</a>
+          </div>
+          <div class="hero-stats" aria-label="Ключевые преимущества">
+            <div><strong>от 100 000</strong><span>стоимость выступления</span></div>
+            <div><strong>10+ лет</strong><span>репутации на сцене</span></div>
+            <div><strong>100%</strong><span>живой праздничный драйв</span></div>
+          </div>
         </div>
-      </div>
-      <div class="hero-mark">
-        <img src="assets/logo-clean.png" alt="Estrada Show">
-        <span>live cover show</span>
-      </div>
-    </section>
+      </section>
 
-    <section id="why" class="why">
-      <article>
-        <span>01</span>
-        <h2>РќРµ РїР»РµР№Р»РёСЃС‚</h2>
-        <p>Р–РёРІРѕР№ РєРѕР»Р»РµРєС‚РёРІ РІРµРґРµС‚ РІРµС‡РµСЂ РєР°Рє РєРѕРЅС†РµСЂС‚РЅС‹Р№ Р±Р»РѕРє, Р° РЅРµ РїСЂРѕСЃС‚Рѕ РёРіСЂР°РµС‚ В«С„РѕРЅВ» РјРµР¶РґСѓ РєРѕРЅРєСѓСЂСЃР°РјРё.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <h2>РҐРёС‚С‹ СЃ С…Р°СЂР°РєС‚РµСЂРѕРј</h2>
-        <p>Р›СЋР±РёРјС‹Рµ РїРµСЃРЅРё Р·РІСѓС‡Р°С‚ СЃРІРµР¶РµРµ: РІРѕРєР°Р», РєР»Р°РІРёС€Рё, РіРёС‚Р°СЂР°, Р±Р°СЃ, Р±Р°СЂР°Р±Р°РЅС‹, СЃР°РєСЃРѕС„РѕРЅ Рё СЃРѕР±СЃС‚РІРµРЅРЅР°СЏ СЌРЅРµСЂРіРёСЏ РіСЂСѓРїРїС‹.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <h2>РљРѕСЂРѕС‚РєРѕ Рё СЏСЂРєРѕ</h2>
-        <p>РњРѕР¶РЅРѕ РІСЃС‚СЂРѕРёС‚СЊ РјРѕС‰РЅС‹Р№ СЃРµС‚ РІ РїСЂРѕРіСЂР°РјРјСѓ РёР»Рё СЃРґРµР»Р°С‚СЊ РїРѕР»РЅРѕС†РµРЅРЅС‹Р№ РєРѕРЅС†РµСЂС‚ РїРѕРґ РєР»СЋС‡.</p>
-      </article>
-    </section>
+      <section class="marquee" aria-label="Преимущества">
+        <div>
+          <span>больше блесток</span>
+          <span>живой звук</span>
+          <span>любимые хиты</span>
+          <span>энергия танцпола</span>
+          <span>лучшие события Архангельска</span>
+        </div>
+      </section>
 
-    <section id="photos" class="photo-story" aria-label="Р¤РѕС‚Рѕ Estrada Show">
-      <div class="photo-intro">
-        <p class="eyebrow">Р¤РѕС‚Рѕ</p>
-        <h2>РЎРІРµС‚, Р»СЋРґРё, СЃС†РµРЅР°. Р’РѕС‚ С‚Р°Рє РІС‹РіР»СЏРґРёС‚ РІРµС‡РµСЂ СЃ Estrada Show.</h2>
-      </div>
-      <figure class="photo photo-hero">
-        <img src="assets/show/wide-band.jpg" alt="Estrada Show РІС‹СЃС‚СѓРїР°РµС‚ РЅР° РїР»РѕС‰Р°РґРєРµ">
-        <figcaption>full band</figcaption>
-      </figure>
-      <figure class="photo photo-tall">
-        <img src="assets/show/sax.jpg" alt="РЎР°РєСЃРѕС„РѕРЅ Рё РІРѕРєР°Р» Estrada Show">
-        <figcaption>sax & vocal</figcaption>
-      </figure>
-      <figure class="photo">
-        <img src="assets/show/crowd-clap.jpg" alt="Р“РѕСЃС‚Рё Р°РїР»РѕРґРёСЂСѓСЋС‚ РЅР° РєРѕРЅС†РµСЂС‚Рµ Estrada Show">
-        <figcaption>crowd</figcaption>
-      </figure>
-      <figure class="photo">
-        <img src="assets/show/red-duo.jpg" alt="РњСѓР·С‹РєР°РЅС‚С‹ Estrada Show РІ РєСЂР°СЃРЅРѕРј СЃРІРµС‚Рµ">
-        <figcaption>drive</figcaption>
-      </figure>
-      <figure class="photo photo-wide">
-        <img src="assets/show/lights.jpg" alt="РЎРІРµС‚РѕРІР°СЏ Р°С‚РјРѕСЃС„РµСЂР° РјРµСЂРѕРїСЂРёСЏС‚РёСЏ">
-        <figcaption>lights</figcaption>
-      </figure>
-      <figure class="photo">
-        <img src="assets/show/drums.jpg" alt="Р‘Р°СЂР°Р±Р°РЅС‰РёРє Рё РіСЂСѓРїРїР° Estrada Show">
-        <figcaption>rhythm</figcaption>
-      </figure>
-      <figure class="photo">
-        <img src="assets/show/party.jpg" alt="Р“РѕСЃС‚Рё С‚Р°РЅС†СѓСЋС‚ РїРѕРґ Estrada Show">
-        <figcaption>party</figcaption>
-      </figure>
-    </section>
+      <section class="section intro">
+        <div class="section-kicker">Лучший шоу-коллектив Архангельска</div>
+        <h2>Estrada раскачивает любой праздник: от камерного ужина до большого танцпола</h2>
+        <p>
+          Самобытная кавер-группа с узнаваемым стилем, плотным живым звуком и сценической
+          подачей. Вы получаете не просто сет песен, а цельный музыкальный блок, который
+          поддерживает темп вечера и выглядит как настоящее шоу.
+        </p>
+      </section>
 
-    <section class="reviews">
-      <div class="reviews-title">
-        <p class="eyebrow">РћС‚Р·С‹РІС‹</p>
-        <h2>РџРѕСЃР»Рµ РІС‹СЃС‚СѓРїР»РµРЅРёСЏ РіРѕСЃС‚Рё РїРёС€СѓС‚ РЅРµ РѕРґРЅРѕ СЃР»РѕРІРѕ, Р° С†РµР»С‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ.</h2>
-      </div>
-      <div class="review-cards">
-        <article class="review-card">
-          <img src="assets/501.jpg" alt="РћС‚Р·С‹РІ РєР»РёРµРЅС‚Р° Рѕ Estrada Show">
-          <p>В«Р—РІСѓРє С€РёРєР°СЂРµРЅ. Р“РѕСЃС‚Рё РІ РІРѕСЃС‚РѕСЂРіРµ. РќРѕРіРё Р±РѕР»СЏС‚, РіРѕР»РѕСЃР° РЅРµС‚В».</p>
-        </article>
-        <article class="review-card">
-          <img src="assets/502.jpg" alt="РћС‚Р·С‹РІ РєР»РёРµРЅС‚Р° Рѕ РєРѕРЅС†РµСЂС‚Рµ Estrada Show">
-          <p>В«РћС‚ РІР°СЃ РёРґРµС‚ Р±РµС€РµРЅР°СЏ СЌРЅРµСЂРіРёСЏ. Р”Р°Р¶Рµ РЅРµ С…РѕС‡РµС‚СЃСЏ СѓС…РѕРґРёС‚СЊ СЃ С‚Р°РЅС†РїРѕР»Р°В».</p>
-        </article>
-      </div>
-    </section>
+      <section class="section cards-section" id="shows">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Форматы</div>
+            <h2>Можно встроить в программу или забрать вечер целиком</h2>
+          </div>
+          <p>Подберем состав, тайминг и репертуар под площадку, ведущего и настроение гостей.</p>
+        </div>
+        <div class="show-grid">
+          <article class="show-card">
+            <span>01</span>
+            <h3>Концерт под ключ</h3>
+            <p>Полноценное live-шоу с несколькими блоками, светом, динамикой и кульминацией.</p>
+          </article>
+          <article class="show-card hot">
+            <span>02</span>
+            <h3>Свадьба и частный праздник</h3>
+            <p>Музыка, под которую гости сами встают из-за столов. Бережно к сценарию, громко к эмоциям.</p>
+          </article>
+          <article class="show-card">
+            <span>03</span>
+            <h3>Корпоратив / бизнес</h3>
+            <p>Эффектный финал делового события, новогодней вечеринки или клиентского мероприятия.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="booking" class="booking">
-      <div>
-        <p class="eyebrow">Booking</p>
-        <h2>Р”Р°С‚Р° СЃРІРѕР±РѕРґРЅР°?</h2>
-        <p>РќР°РїРёС€РёС‚Рµ РґР°С‚Сѓ, РіРѕСЂРѕРґ Рё С„РѕСЂРјР°С‚ СЃРѕР±С‹С‚РёСЏ. РћС‚РІРµС‚РёРј РїРѕ СЃРѕСЃС‚Р°РІСѓ, СЃС‚РѕРёРјРѕСЃС‚Рё Рё С‚РµС…РЅРёС‡РµСЃРєРёРј СѓСЃР»РѕРІРёСЏРј.</p>
-      </div>
-      <div class="booking-actions">
-        <a class="btn btn-main" href="tel:+79095526559">+7 909 552-65-59</a>
-        <a class="btn btn-light" href="https://vk.ru/estrada_band" target="_blank" rel="noreferrer">РќР°РїРёСЃР°С‚СЊ РІРѕ VK</a>
-      </div>
-    </section>
-  </main>
-</body>
+      <section class="photo-band" id="portfolio">
+        <figure>
+          <img src="assets/vocals.jpg" alt="Вокалисты Estrada Show на сцене" />
+          <figcaption>Свадьбы и частные события</figcaption>
+        </figure>
+        <figure class="wide">
+          <img src="assets/crowd.jpg" alt="Гости танцуют на концерте Estrada Show" />
+          <figcaption>Танцпол, который включается с первого блока</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/sax-keys.jpg" alt="Музыканты Estrada Show с саксофоном и клавишами" />
+          <figcaption>Живой состав и узнаваемая подача</figcaption>
+        </figure>
+      </section>
+
+      <section class="section trust">
+        <div>
+          <div class="section-kicker">Доверие</div>
+          <h2>За плечами десятки концертов на городских площадках и частных мероприятиях</h2>
+        </div>
+        <div class="trust-list">
+          <p>Ивент-агентства Архангельска, включая Frolova Event</p>
+          <p>Ведущие города: Мелешкин с Сухановым</p>
+          <p>Бизнес-события, включая группу компаний Аквилон</p>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Отзывы</div>
+            <h2>“Так нельзя... нельзя...”</h2>
+          </div>
+          <p>Скриншоты из реальных сообщений оставлены как социальное доказательство для мокапа.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card text-review">
+            <p>
+              “Вы все такие разные и каждый уникален по-своему. Он был бомбический. Песни в ваших
+              руках рождаются заново.”
+            </p>
+            <span>После концерта</span>
+          </article>
+          <img src="assets/review-1.jpg" alt="Отзыв клиента о выступлении Estrada Show" />
+          <img src="assets/review-2.jpg" alt="Отзыв клиента о концерте Estrada Show" />
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="split-media">
+          <img src="assets/keys.jpg" alt="Клавишник Estrada Show на сцене" />
+        </div>
+        <div class="split-copy">
+          <div class="section-kicker">Как это звучит для заказчика</div>
+          <h2>Без лишнего хаоса: согласуем блоки, сцену и момент выхода</h2>
+          <ul class="check-list">
+            <li>Помогаем встроить выступление в сценарий ведущего.</li>
+            <li>Готовим сет под возраст и вкус гостей.</li>
+            <li>Держим энергию вечера и не превращаем праздник в “фон”.</li>
+            <li>Сохраняем фирменную эстетику Estrada: розовый неон, драйв, блеск.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-kicker">FAQ</div>
+        <h2>Частые вопросы</h2>
+        <div class="faq-grid">
+          <details open>
+            <summary>Сколько стоит выступление?</summary>
+            <p>Ориентир из брифа - от 100 000. Финальная стоимость зависит от даты, площадки, состава и тайминга.</p>
+          </details>
+          <details>
+            <summary>Можно ли заказать только один блок?</summary>
+            <p>Да, Estrada может быть главным концертом вечера или ярким дополнением к программе.</p>
+          </details>
+          <details>
+            <summary>Подходит ли группа для свадьбы?</summary>
+            <p>Да. По брифу это одна из сильных зон: многолетняя репутация и формат “лучшая свадебная группа Архангельска”.</p>
+          </details>
+          <details>
+            <summary>Где посмотреть больше?</summary>
+            <p>Основная социальная точка для прототипа - <a href="https://vk.ru/estrada_band" target="_blank" rel="noreferrer">vk.ru/estrada_band</a>.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="booking" id="booking">
+        <img class="booking-bg" src="assets/stage.jpg" alt="" aria-hidden="true" />
+        <div class="booking-card">
+          <img src="assets/logo-dark.jpg" alt="Estrada Show" />
+          <div>
+            <p class="eyebrow">Заявка</p>
+            <h2>Проверим дату и соберем шоу под ваш праздник</h2>
+          </div>
+          <form>
+            <label>
+              Ваше имя
+              <input type="text" placeholder="Например, Александр" />
+            </label>
+            <label>
+              Дата события
+              <input type="text" placeholder="15 августа" />
+            </label>
+            <label>
+              Формат
+              <select>
+                <option>Свадьба</option>
+                <option>Корпоратив</option>
+                <option>Частное мероприятие</option>
+                <option>Концерт под ключ</option>
+              </select>
+            </label>
+            <label>
+              Контакт
+              <input type="text" placeholder="Телефон / Telegram / VK" />
+            </label>
+            <button class="btn btn-primary" type="button">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Estrada Show</span>
+      <a href="https://vk.ru/estrada_band" target="_blank" rel="noreferrer">vk.ru/estrada_band</a>
+      <span>Прототип лендинга / 2026</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
-
-
-/* styles.css */
-:root {
-  --bg: #050508;
-  --panel: #101014;
-  --text: #fff7fb;
-  --muted: rgba(255, 247, 251, 0.72);
-  --line: rgba(255, 255, 255, 0.14);
-  --pink: #f8488a;
-  --magenta: #ff2ec4;
-  --orange: #ff8b34;
-  --lime: #e4ff41;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Inter, Arial, sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at 18% 4%, rgba(248, 72, 138, 0.24), transparent 28rem),
-    radial-gradient(circle at 82% 10%, rgba(255, 139, 52, 0.2), transparent 27rem),
-    linear-gradient(180deg, #050508 0%, #0b0710 58%, #050508 100%);
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 12% 28%, rgba(255, 46, 196, 0.18), transparent 16rem),
-    radial-gradient(circle at 72% 42%, rgba(228, 255, 65, 0.08), transparent 15rem),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 74px);
-  opacity: 0.58;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 18px clamp(22px, 4.5vw, 76px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, rgba(5, 5, 8, 0.78), rgba(5, 5, 8, 0.28));
-  backdrop-filter: blur(16px);
-}
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  min-width: 0;
-}
-
-.logo img {
-  width: min(21vw, 220px);
-  min-width: 138px;
-  height: 58px;
-  object-fit: contain;
-  object-position: left center;
-  filter:
-    drop-shadow(0 0 14px rgba(248, 72, 138, 0.9))
-    drop-shadow(0 0 32px rgba(255, 46, 196, 0.45));
-}
-
-.logo span,
-.tag {
-  flex: 0 0 auto;
-  padding: 6px 10px;
-  border: 1px solid rgba(228, 255, 65, 0.55);
-  border-radius: 999px;
-  color: var(--lime);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  background: rgba(5, 5, 8, 0.46);
-}
-
-.nav {
-  display: flex;
-  gap: 8px;
-}
-
-.nav a {
-  padding: 10px 13px;
-  border-radius: 999px;
-  color: rgba(255, 247, 251, 0.74);
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.nav a:hover {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.09);
-}
-
-.hero {
-  position: relative;
-  isolation: isolate;
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 138px clamp(22px, 5vw, 86px) clamp(56px, 7vw, 112px);
-  background:
-    linear-gradient(90deg, rgba(5, 5, 8, 0.9) 0%, rgba(5, 5, 8, 0.63) 31%, rgba(5, 5, 8, 0.2) 61%, rgba(5, 5, 8, 0.76) 100%),
-    linear-gradient(0deg, rgba(5, 5, 8, 0.96) 0%, rgba(5, 5, 8, 0.18) 34%, rgba(5, 5, 8, 0.36) 100%),
-    url("assets/show/wide-band.jpg") center center / cover no-repeat;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -18%;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 20% 25%, rgba(248, 72, 138, 0.46), transparent 12rem),
-    radial-gradient(circle at 72% 18%, rgba(228, 255, 65, 0.32), transparent 9rem),
-    radial-gradient(circle at 55% 74%, rgba(255, 139, 52, 0.34), transparent 16rem),
-    linear-gradient(116deg, transparent 0 39%, rgba(255, 255, 255, 0.14) 46%, transparent 55%);
-  mix-blend-mode: screen;
-  opacity: 0.78;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 16% 24%, rgba(255, 255, 255, 0.9) 0 1px, transparent 2px),
-    radial-gradient(circle at 25% 55%, rgba(228, 255, 65, 0.9) 0 1px, transparent 2px),
-    radial-gradient(circle at 84% 25%, rgba(255, 255, 255, 0.85) 0 1px, transparent 2px),
-    radial-gradient(circle at 73% 72%, rgba(255, 46, 196, 0.9) 0 1px, transparent 2px),
-    linear-gradient(90deg, rgba(5, 5, 8, 0.28), transparent 34%, rgba(5, 5, 8, 0.28));
-  background-size: 210px 210px, 310px 310px, 240px 240px, 280px 280px, auto;
-  opacity: 0.62;
-}
-
-.sparkles {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.sparkles::before,
-.sparkles::after {
-  content: "";
-  position: absolute;
-  width: 62vmax;
-  height: 7vmax;
-  border-radius: 999px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), rgba(255, 46, 196, 0.32), transparent);
-  filter: blur(10px);
-  opacity: 0.52;
-  transform: rotate(-18deg);
-  animation: sweep 8s ease-in-out infinite;
-}
-
-.sparkles::before {
-  left: -18vw;
-  top: 22vh;
-}
-
-.sparkles::after {
-  right: -24vw;
-  bottom: 18vh;
-  animation-delay: 2.8s;
-}
-
-.hero-copy {
-  position: relative;
-  z-index: 2;
-  max-width: min(840px, 58vw);
-}
-
-.hero-mark {
-  position: absolute;
-  right: clamp(22px, 4.8vw, 84px);
-  bottom: clamp(30px, 5vw, 76px);
-  z-index: 2;
-  display: grid;
-  justify-items: end;
-  gap: 10px;
-  pointer-events: none;
-}
-
-.hero-mark img {
-  width: min(28vw, 380px);
-  min-width: 230px;
-  height: auto;
-  object-fit: contain;
-  filter:
-    drop-shadow(0 0 20px rgba(248, 72, 138, 0.95))
-    drop-shadow(0 0 54px rgba(255, 46, 196, 0.55));
-}
-
-.hero-mark span {
-  color: var(--lime);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  text-shadow: 0 0 16px rgba(228, 255, 65, 0.45);
-}
-
-.eyebrow {
-  margin: 0 0 16px;
-  color: var(--lime);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  text-shadow: 0 0 14px rgba(228, 255, 65, 0.35);
-}
-
-h1,
-h2,
-p {
-  margin-top: 0;
-}
-
-h1,
-h2 {
-  margin-bottom: 22px;
-  font-weight: 900;
-  letter-spacing: -0.065em;
-  line-height: 0.88;
-}
-
-h1 {
-  font-size: clamp(56px, 7.2vw, 124px);
-  text-shadow:
-    0 6px 34px rgba(0, 0, 0, 0.7),
-    0 0 38px rgba(248, 72, 138, 0.2);
-}
-
-h2 {
-  font-size: clamp(42px, 5.8vw, 92px);
-}
-
-.lead,
-.booking p,
-.why p {
-  color: var(--muted);
-  font-size: clamp(18px, 1.6vw, 23px);
-  line-height: 1.42;
-}
-
-.lead {
-  max-width: 720px;
-  margin-bottom: 28px;
-  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.72);
-}
-
-.cta-row,
-.booking-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.btn {
-  display: inline-flex;
-  min-height: 52px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 22px;
-  border-radius: 999px;
-  font-size: 15px;
-  font-weight: 900;
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn-main {
-  color: #12050d;
-  background: linear-gradient(105deg, var(--lime), #fff, var(--orange) 56%, var(--magenta));
-  box-shadow: 0 0 34px rgba(255, 46, 196, 0.34), 0 0 54px rgba(228, 255, 65, 0.18);
-}
-
-.btn-dark,
-.btn-light {
-  border: 1px solid var(--line);
-  background: rgba(5, 5, 8, 0.54);
-  backdrop-filter: blur(12px);
-}
-
-.why {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border-block: 1px solid var(--line);
-}
-
-.why article {
-  min-height: 290px;
-  padding: clamp(24px, 4vw, 42px);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 50%),
-    radial-gradient(circle at 80% 10%, rgba(248, 72, 138, 0.22), transparent 16rem),
-    var(--panel);
-}
-
-.why span {
-  display: inline-block;
-  margin-bottom: 56px;
-  color: var(--lime);
-  font-weight: 900;
-}
-
-.why h2 {
-  margin-bottom: 14px;
-  font-size: clamp(34px, 4.3vw, 68px);
-}
-
-.photo-story {
-  display: grid;
-  grid-template-columns: 1.12fr 0.74fr 0.74fr;
-  grid-auto-rows: 260px;
-  gap: 14px;
-  padding: clamp(14px, 2vw, 24px);
-}
-
-.photo-intro {
-  grid-column: span 2;
-  display: flex;
-  min-height: 260px;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: clamp(24px, 4vw, 48px);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background:
-    radial-gradient(circle at 78% 18%, rgba(255, 46, 196, 0.22), transparent 18rem),
-    radial-gradient(circle at 12% 70%, rgba(228, 255, 65, 0.09), transparent 12rem),
-    rgba(255, 255, 255, 0.045);
-}
-
-.photo-intro h2 {
-  max-width: 960px;
-  margin-bottom: 0;
-  font-size: clamp(38px, 5vw, 82px);
-}
-
-.photo {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  background: #111;
-}
-
-.photo::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, transparent 42%, rgba(0, 0, 0, 0.5)),
-    radial-gradient(circle at 20% 20%, rgba(228, 255, 65, 0.12), transparent 9rem);
-}
-
-.photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: linear-gradient(120deg, transparent 38%, rgba(255, 255, 255, 0.22), transparent 50%);
-  transform: translateX(-120%);
-  animation: shine 7s infinite;
-  pointer-events: none;
-}
-
-.photo-hero {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.photo-wide {
-  grid-column: span 2;
-}
-
-.photo-tall {
-  grid-row: span 2;
-}
-
-.photo img {
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(1.12) contrast(1.06);
-}
-
-.photo figcaption {
-  position: absolute;
-  left: 16px;
-  bottom: 16px;
-  z-index: 3;
-  padding: 8px 11px;
-  border: 1px solid rgba(228, 255, 65, 0.5);
-  border-radius: 999px;
-  background: rgba(5, 5, 8, 0.58);
-  color: var(--lime);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  backdrop-filter: blur(10px);
-}
-
-.reviews {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr);
-  gap: clamp(24px, 5vw, 72px);
-  align-items: center;
-  padding: clamp(72px, 8vw, 116px) clamp(20px, 5vw, 72px);
-}
-
-.review-cards {
-  display: grid;
-  gap: 14px;
-}
-
-.review-card {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 20px;
-  align-items: center;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 60%),
-    rgba(255, 255, 255, 0.055);
-}
-
-.review-card img {
-  max-height: 150px;
-  object-fit: contain;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.review-card p {
-  margin: 0;
-  font-size: clamp(19px, 2vw, 26px);
-  font-weight: 900;
-  line-height: 1.15;
-}
-
-.booking {
-  min-height: 520px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 30px;
-  padding: clamp(72px, 9vw, 126px) clamp(20px, 5vw, 72px);
-  background:
-    linear-gradient(90deg, rgba(5, 5, 8, 0.94), rgba(5, 5, 8, 0.48)),
-    url("assets/show/bar-lights.jpg") center / cover;
-}
-
-.booking > div:first-child {
-  max-width: 780px;
-}
-
-.booking h2 {
-  margin-bottom: 16px;
-}
-
-@keyframes shine {
-  0%, 42% {
-    transform: translateX(-120%);
-  }
-  70%, 100% {
-    transform: translateX(120%);
-  }
-}
-
-@keyframes sweep {
-  0%, 38% {
-    transform: translateX(-18vw) rotate(-18deg);
-    opacity: 0;
-  }
-  54% {
-    opacity: 0.56;
-  }
-  76%, 100% {
-    transform: translateX(22vw) rotate(-18deg);
-    opacity: 0;
-  }
-}
-
-@media (max-width: 1100px) {
-  .hero {
-    background-position: 58% center;
-  }
-
-  .hero-copy {
-    max-width: 720px;
-  }
-
-  .hero-mark {
-    opacity: 0.72;
-  }
-
-  .why,
-  .reviews {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-story {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .photo-intro,
-  .photo-hero,
-  .photo-wide {
-    grid-column: span 2;
-  }
-
-  .photo-tall {
-    grid-row: span 2;
-  }
-
-  .booking {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 720px) {
-  .header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    padding: 14px 18px;
-  }
-
-  .nav {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .logo img {
-    width: 156px;
-    min-width: 156px;
-    height: 48px;
-  }
-
-  .logo span {
-    font-size: 10px;
-  }
-
-  .hero {
-    min-height: 820px;
-    padding: 146px 18px 42px;
-    background-position: 63% center;
-  }
-
-  .hero-copy {
-    max-width: 100%;
-  }
-
-  .hero-mark {
-    top: 132px;
-    right: 18px;
-    bottom: auto;
-  }
-
-  .hero-mark img {
-    width: 170px;
-    min-width: 170px;
-  }
-
-  .hero-mark span {
-    display: none;
-  }
-
-  h1 {
-    font-size: clamp(48px, 14vw, 78px);
-  }
-
-  .cta-row,
-  .booking-actions,
-  .btn {
-    width: 100%;
-  }
-
-  .photo-story {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 280px;
-  }
-
-  .photo-intro,
-  .photo-hero,
-  .photo-wide,
-  .photo-tall {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .photo-intro {
-    min-height: auto;
-  }
-
-  .review-card {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media print {
-  @page {
-    size: A4 landscape;
-    margin: 0;
-  }
-
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  body {
-    background: #050508 !important;
-  }
-
-  .header {
-    position: absolute;
-  }
-}
